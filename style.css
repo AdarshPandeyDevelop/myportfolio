@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav{
+    padding: 1vw 3vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #252525;
+}
+
+.box{
+    display: flex;
+}
+
+#A{
+    width: 2.5vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.p{
+    color: white;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+    width: 10vw;
+}
+
+.list{
+    display: flex;
+    margin-left: 56.2vw;
+}
+
+ul li{
+    display: inline-block;
+    padding: 1vw 1.5vw 0vw 1.5vw;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: all 0.5 ease-in;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+}
+  
+ul li a:hover::after {
+    opacity: 1;
+}
+
+#menu{
+    width: 2.5vw;
+    height: 5vh; 
+    margin-left: 2vw;
+    display: none;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    background-color: #252525;
+    padding: 16vw 8vw;
+}
+
+.p1{
+    font-size: 1.3vw;
+    color: white;
+}
+
+.p2{
+    font-size: 4vw;
+    color: white; 
+}
+
+.p3{
+    font-size: 2.5vw;
+    color: white; 
+    margin-top: -1vw;
+}
+
+.p4{
+    font-size: 1.5vw;
+    color: white; 
+}
+
+.right{
+    width: 50%;
+    background-color: #252525;
+    height: 100vh;
+}
+
+.myPic{
+    margin-left: 10vw;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    margin-top: 5vw;
+    width: 20vw;
+}
+
+#main2{
+    background-color: #252525;
+    color: white;
+}
+
+.p5{
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.sec{
+    height: 0.1vw;
+    width: 50vw;
+    background-color: white;
+    margin-left: 25vw;
+    margin-bottom: 5vw;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 20vw;
+    border: 2px solid white;
+    margin-bottom: 3vw;
+}
+
+.card img{
+    width: 20vw;
+}
+
+.p6{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.card a{
+    color: white;
+    text-decoration: none;
+}
+
+.p7{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+#main3{
+    background-color: #252525;
+    color: white;
+}
+
+.p8{
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 5vw;
+}
+
+.block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left2{
+    width: 50%;
+}
+
+.left2 img{
+    width: 30vw;
+    margin-left: 5vw;
+    margin-top: 0vw;
+}
+
+.right2{
+    width: 50%;
+}
+
+.p9{
+    padding: 2vw 3vw;
+    font-size: 1.5vw;
+}
+
+.skill{
+    margin-left: 1.5vw;
+    font-size: 3vw;
+}
+
+#main4{
+    background-color: #252525;
+    color: white;
+    padding-bottom: 2vw;
+
+}
+
+.p11{
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 5vw;
+}
+
+.contain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec1{
+    display: flex;
+}
+
+.A{
+    width: 2.5vw;
+    cursor: pointer;
+    margin-left: 2vw;
+}
+
+.section{
+    height: 2vw;
+    width: 0.2vw;
+    background-color: white;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+}
+
+.p12{
+    font-size: 1.3vw;
+    margin-top: 0.6vw;
+    margin-left: 2vw;
+}
+
+.sec2{
+    margin-right: 2vw;
+}
+
+.icon{
+    width: 2.5vw;
+    margin-top: 0.3vw;
+    margin-right: 1vw;
+}
+
+@media (max-width: 600px) {
+
+nav{
+    width: 100%;
+}
+
+#A{
+    width: 7vw;
+    margin-left: 2vw;
+}
+
+.p{
+    width: 30vw;
+    margin-top: 3vw;
+}
+
+.list{
+    display: flex;
+    margin-left: 40vw;
+    position: absolute;
+}
+
+#ul{
+    display: none;
+    margin-top: 10vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+
+ul li{
+    display: block;
+    padding: 1vw 0vw 0vw 0vw;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: none;
+}
+
+#menu{
+    width: 8vw;
+    height: 5vh; 
+    margin-left: 45vw;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+}
+
+#main{
+    display: block;
+}
+
+.left{
+    width: 100%;
+    padding: 16vw 8vw;
+}
+
+.p1{
+    font-size: 5vw;
+}
+
+.p2{
+    font-size: 10vw;
+}
+
+.p3{
+    font-size: 8vw;
+}
+
+.p4{
+    font-size: 5vw;
+    color: white; 
+}
+
+.right{
+    width: 100%;
+    height: 60vh;
+}
+
+.myPic{
+    margin-left: 25vw;
+    margin-top: 5vw;
+    width: 60vw;
+}
+
+#main2{
+    background-color: #252525;
+    color: white;
+    padding-top: 60vw;
+}
+
+.p5{
+    font-size: 10vw;
+}
+
+.sec{
+    width: 70vw;
+    margin-left: 15vw;
+}
+
+.cards{
+    display: block;
+}
+
+.card{
+    width: 60vw;
+    height: auto;
+    border: 2px solid white;
+    margin-bottom: 5vw;
+    margin-left: 20vw;
+}
+
+.card img{
+    width: 40vw;
+    margin-left: 10vw;
+}
+
+.p6{
+    font-size: 8vw;
+}
+
+.p7{
+    font-size: 5vw;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+#main3{
+    margin-top: -5vw;
+}
+
+.p8{
+    font-size: 10vw;
+    padding-top: 15vw;
+}
+
+.block{
+    width: 100%;
+    display: block;
+}
+
+.left2{
+    width: 100%;
+}
+
+.left2 img{
+    width: 70vw;
+    margin-left: 15vw;
+    margin-top: 0vw;
+}
+
+.right2{
+    width: 100%;
+}
+
+.p9{
+    padding: 3vw 5vw;
+    font-size: 6vw;
+    text-align: center;
+}
+
+.skill{
+    text-align: center;
+    font-size: 8vw;
+}
+
+#main4{
+    background-color: #252525;
+    color: white;
+    padding-bottom: 2vw;
+}
+
+.p11{
+    font-size: 12vw;
+    text-align: center;
+    padding-top: 20vw;
+}
+
+.contain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec1{
+    display: flex;
+}
+
+.A{
+    width: 7vw;
+    margin-left: 2vw;
+}
+
+.section{
+    height: 7vw;
+    width: 0.2vw;
+    background-color: white;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+}
+
+.p12{
+    font-size: 4vw;
+    margin-top: 1.5vw;
+    margin-left: 2vw;
+}
+
+.sec2{
+    margin-right: 2vw;
+}
+
+.icon{
+    width: 8vw;
+    margin-top: 0.3vw;
+    margin-right: 1vw;
+}
+
+}
